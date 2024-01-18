@@ -28,7 +28,7 @@ const App = () => {
                         <Pressable
                             style={[styles.button, styles.buttonClose]}
                             onPress={() => setModalVisible(!modalVisible)}>
-                            <Text style={styles.textStyle}>Close</Text>
+                            <Text style={styles.textStyle}>Close!</Text>
                         </Pressable>
                     </View>
                 </View>
