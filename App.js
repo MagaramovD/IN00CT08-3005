@@ -16,7 +16,7 @@ const Login = () => {
 
         const isValid = !newErrors.username && !newErrors.password;
         if (isValid) {
-            console.log("data form", formData);
+            console.log("Data form", formData);
 
         }
     };
