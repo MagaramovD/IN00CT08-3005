@@ -4,7 +4,6 @@ import MapView from 'react-native-maps';
 import * as Location from 'expo-location';
 
 const MapComponent = () => {
-    // Define state for location
     const [location, setLocation] = useState({
         latitude: 65.0800,
         longitude: 25.4800,
@@ -12,7 +11,6 @@ const MapComponent = () => {
         longitudeDelta: 0.0421,
     });
 
-    // Asynchronous function to get user's location
     const getLocation = async () => {
         let { status } = await Location.requestForegroundPermissionsAsync();
         if (status !== 'granted') {
@@ -28,7 +26,6 @@ const MapComponent = () => {
         });
     };
 
-    // useEffect to get GPS coordinates when Map is displayed
     useEffect(() => {
         (async () => {
             await getLocation();
